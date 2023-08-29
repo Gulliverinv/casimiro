@@ -15,22 +15,30 @@
 </head>
 <body class="bg-black">
     <div class="form-box" id="login-box">
+        <!-- encaberzado-->
         <div class="header">Login</div>
+        <!-- formulario que se envia en asp-->
         <form id="form1" runat="server">
+            <!-- body con background gray donde pondre los controles-->
             <div class="body bg-gray">
+                <!--BOOTSTRAP agrupar elemenetos dentro de un formulario formulario-->
                 <div class="form-group">
+                    <!-- control devexpress   ASP.Net CssClass es un contenedor abstracto-->
                     <dx:ASPxTextBox ID="txtUsuario" runat="server" CssClass="form-control" placeholder="Ingrese usuario..."></dx:ASPxTextBox>
                 </div>
                 <div class="form-group">
                     <dx:ASPxTextBox ID="txtPassword" runat="server" CssClass="form-control" placeholder="Ingrese clave..." TextMode="Password"></dx:ASPxTextBox>
                 </div>
             </div>
+            <!-- use header, un body, footer para el boton HTML5-->
             <div class="footer">
+                <!-- control devexpress-->
                 <dx:ASPxButton ID="btnAcceso" runat="server" Text="Iniciar Sesión" CssClass="btn bg-olive btn-block" OnClick="btnAcceso_Click"></dx:ASPxButton>
             </div>
         </form>
     </div>
 </body>
+    <!-- eveneto-->
 <script src="js/jquery-3.1.0.min.js"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 </html>
