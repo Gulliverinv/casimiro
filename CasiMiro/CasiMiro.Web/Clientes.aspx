@@ -1,5 +1,9 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Clientes.aspx.vb" Inherits="CasiMiro.Web.Clientes" %>
 
+<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+
+<%@ Register Assembly="DevExpress.XtraCharts.v23.1.Web, Version=23.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraCharts.Web.Designer" TagPrefix="dxchartdesigner" %>
+
 <%@ Register Assembly="DevExpress.Web.v23.1, Version=23.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 <!DOCTYPE html>
@@ -12,7 +16,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDSClientes" KeyFieldName="customer_id">
+            <dx:ASPxGridView ID="griClientes" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDSClientes" KeyFieldName="customer_id">
 <SettingsPopup>
 <FilterControl AutoUpdatePosition="False"></FilterControl>
 </SettingsPopup>
@@ -76,6 +80,26 @@
                 </UpdateParameters>
             </asp:SqlDataSource>
         </div>
+        <div>
+
+        </div>
+        <div>
+            <dx:ASPxGridView ID="griCustomers" runat="server"></dx:ASPxGridView>
+        </div>
+        <div>
+
+        </div>
+        <div>
+            <asp:Chart runat="server" ID="CharProdPreferidos" Width="416px">
+                <series>
+                    <asp:Series Name="Series1" ChartType="Doughnut" YValuesPerPoint="2"></asp:Series>
+                </series>
+                <chartareas>
+                    <asp:ChartArea Name="CharProdPreferidos"></asp:ChartArea>
+                </chartareas> 
+            </asp:Chart>
+        </div>
+
     </form>
 </body>
 </html>

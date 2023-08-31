@@ -23,13 +23,13 @@ Partial Public Class Clientes
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''Control ASPxGridView1.
+    '''Control griClientes.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents ASPxGridView1 As Global.DevExpress.Web.ASPxGridView
+    Protected WithEvents griClientes As Global.DevExpress.Web.ASPxGridView
 
     '''<summary>
     '''Control SqlDSClientes.
@@ -39,4 +39,22 @@ Partial Public Class Clientes
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents SqlDSClientes As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Control griCustomers.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents griCustomers As Global.DevExpress.Web.ASPxGridView
+
+    '''<summary>
+    '''Control CharProdPreferidos.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents CharProdPreferidos As Global.System.Web.UI.DataVisualization.Charting.Chart
 End Class
